@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <title>Meubles - Trésor d'Aix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #38704c;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #285a36;
+            text-align: center;
+            font-size: 26px;
+            margin-top: 40px;
+        }
+        
+        .back-button {
+            background-color: #238f2c;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #17611d;
+        }
+        
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 20px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .product-name {
+            color: #38704c;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .product-price {
+            color: #238f2c;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .contact-button {
+            background-color: #238f2c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-button:hover {
+            background-color: #17611d;
+        }
+         .social-links {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        
+        .social-links a {
+            color: #238f2c;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #17611d;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='Site.html'">← Retour à l'accueil</button>
+    
+    <h1>Trésor d'Aix</h1>
+    <h2>Jeux, jouets ou livres disponibles</h2>
+    
+    <div class="products-container">
+        <div class="product-card">
+            <img src="jouet enfant.jpg" alt="Jouet enfant">
+            <div class="product-name">Jouet pour enfant</div>
+            <div class="product-price">9€</div>
+            <button class="contact-button" onclick="alert('Contactez-nous pour ce produit')">Contacter</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="peluche.jpg" alt="Peuluche">
+            <div class="product-name">Peuluche</div>
+            <div class="product-price">13€</div>
+            <button class="contact-button" onclick="alert('Contactez-nous pour ce produit')">Contacter</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="uno.webp" alt="Uno">
+            <div class="product-name">Uno</div>
+            <div class="product-price">14€</div>
+            <button class="contact-button" onclick="alert('Contactez-nous pour ce produit')">Contacter</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="monopoly.jpg" alt="Monopoly">
+            <div class="product-name">Lit 2 Monopoly</div>
+            <div class="product-price">17€</div>
+            <button class="contact-button" onclick="alert('Contactez-nous pour ce produit')">Contacter</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="roman policier.webp" alt="Roman policier">
+            <div class="product-name">Roman policier</div>
+            <div class="product-price">6€</div>
+            <button class="contact-button" onclick="alert('Contactez-nous pour ce produit')">Contacter</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="bd.jpg" alt="Bande dessiné">
+            <div class="product-name">Bande dessiné</div>
+            <div class="product-price">5€</div>
+            <button class="contact-button" onclick="alert('Contactez-nous pour ce produit')">Contacter</button>
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+    </div>
+</body>
+</html>
